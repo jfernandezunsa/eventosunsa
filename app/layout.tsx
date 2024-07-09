@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Lato } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--inter",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  variable: "--lato",
+  weight:["100","300"]
 });
 
 const montserrat = Montserrat({
@@ -25,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={(inter.variable, montserrat.variable)}>{children}</body>
+      <body className={(lato.variable, montserrat.variable)}>{children}</body>
     </html>
   );
 }
