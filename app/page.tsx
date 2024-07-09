@@ -1,8 +1,6 @@
 
 
-import Icon from '@/components/custom/iconos'
-import Objetivos from '@/components/custom/objetivos'
-import { Brain, Mail, MapPin, Phone } from 'lucide-react'
+import { Brain, CircleArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 
 const App = () => {
@@ -140,6 +138,126 @@ const App = () => {
           </div>
         </div>
         {/* Fin Objetivos */}
+
+        {/* Inicio Sede */}
+    <div className="lg:max-w-[1200px] m-auto bg-[#990537] text-white grid grid-flow-row sm:grid-flow-col sm:grid-cols-2">
+      <div className="h-80 sm:h-auto"><img src="administracion-unsa.webp" alt="" /></div>
+      <div className="p-8 sm:p-[54px] md:p-[74px]">
+        <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-white before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
+          Sede</h3>
+        <p className="md:text-lg mb-4">
+          Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para
+          que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
+          procesos de desarrollo territorial.</p>
+      </div>
+    </div>
+    {/* Fin Sede */}
+
+    {/* Incio Inversion*/}
+    <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
+      <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-[#5E151E] before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
+        Inversión</h3>
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="bg-[#051F4380] rounded-lg text-white">
+          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+            <p className="font-extrabold text-5xl line-through">80.00</p>
+          </div>
+          <p className="px-7">*Inscripciones
+            del 20 mayo al 30 julio</p>
+          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+        </div>
+        <div className="bg-[#051F4380] rounded-lg text-white">
+          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <p className="px-7">*Inscripciones
+            del 20 mayo al 30 julio</p>
+          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+        </div>
+        <div className="bg-[#051F4380] rounded-lg text-white">
+          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <p className="px-7">*Inscripciones
+            del 20 mayo al 30 julio</p>
+          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+        </div>
+        <div className="bg-[#051F4380] rounded-lg text-white">
+          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+            <p className="font-extrabold text-5xl">80.00</p>
+          </div>
+          <p className="px-7">*Inscripciones
+            del 20 mayo al 30 julio</p>
+          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+        </div>
+      </div>
+    </div>
+{/* Fin Inversion*/}
+
+{/* Inicio ejes tematicos */}
+    <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
+      <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-white before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
+        Ejes Temáticos</h3>
+        
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 w-full absolute bottom-0">
+          <div><CircleArrowRight size={30} /></div>
+            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="001.jpg" alt="" /></div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 w-full absolute bottom-0">
+          <CircleArrowRight />
+            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="002.jpg" alt="" /></div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
+          <CircleArrowRight />
+            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="003.jpg" alt="" /></div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
+          <CircleArrowRight />
+            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="004.jpg" alt="" /></div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
+          <CircleArrowRight />
+            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="005.jpg" alt="" /></div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
+          <CircleArrowRight />
+            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+          </div>
+          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="006.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+{/* fin ejes tematicos */}
       </main>
     </>
   )
