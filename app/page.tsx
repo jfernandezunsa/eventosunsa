@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import React from "react";
 import CarouselItem from "@/components/custom/carouselItem";
+import { Button } from "@/components/ui/button";
+import { CarouselDemo } from "@/components/custom/carouselBlock";
 
 
 const App = () => {
@@ -67,7 +69,9 @@ const App = () => {
       {/* fin header  */}
       {/* Inicio Hero */}
       <section className="bg-[#051F43] h-[70vh] mt-[106px] sm:mt-[148px] relative">
-      <p>dddd</p>
+      <div className="ml-80"> 
+      <CarouselDemo />
+    </div>
       </section>
       {/* Fin Hero */}
       <main className="font-lato text-base">
