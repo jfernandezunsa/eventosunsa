@@ -1,13 +1,16 @@
-import { LucideHome } from 'lucide-react';
+import React from 'react'
 interface Props {
-  name: any
-  color: string
-  size: number
+  icono: React.JSX.Element
+  texto: string
 }
-const Icon = ({ name, color, size }: Props) => {
-  const LucideIcon = icons[name];
+const Iconos = ({ icono, texto }: Props) => {
+  return (
+    <div className="flex md:flex-col md:items-center gap-4 md:gap-4">
+      {icono}
+      <p className="md:text-lg mb-4">
+        {texto}</p>
+    </div>
+  )
+}
 
-  return <LucideIcon color={color} size={size} />;
-};
-
-export default Icon;
+export default Iconos

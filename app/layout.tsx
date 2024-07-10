@@ -10,7 +10,7 @@ const inter = Inter({
 const lato = Lato({
   subsets: ["latin"],
   variable: "--lato",
-  weight:["100","300"]
+  weight: ["100", "300", "400", "700", "900"]
 });
 
 const montserrat = Montserrat({
@@ -30,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={(lato.variable, montserrat.variable)}>{children}</body>
+    <html lang="es" className={`${lato.variable} ${montserrat.variable}`}> {/* <h3 className={cn(titleStyle, className)}>{title}</h3> */}
+      <body className="bg-gray-200 font-light text-base" >{children}</body>
     </html>
   );
 }

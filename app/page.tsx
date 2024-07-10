@@ -1,7 +1,12 @@
 
 
-import { Brain, CircleArrowRight, Mail, MapPin, Phone } from 'lucide-react'
+import EjesTematicos from '@/components/custom/ejesTematicos'
+import Iconos from '@/components/custom/iconos'
+import PonentesBloque from '@/components/custom/ponentesBloque'
+import TitleSection from '@/components/custom/titleSection'
+import { Brain, CircleArrowRight, Clock4, Diameter, Mail, MapPin, Phone, PhoneCall } from 'lucide-react'
 import React from 'react'
+
 
 const App = () => {
   return (
@@ -61,18 +66,17 @@ const App = () => {
             <h5 className="font-bold lg:font-extrabold text-3xl md:text-4xl lg:text-5xl leading-9 lg:leading-tight sm:text-center text-balance">
               II Encuentro de Economía Solidaria e Innovación Socio Ecológica</h5>
             <div className="sm:flex place-content-between lg:mx-20">
-              <p className="text-primary-light text-balance">07 - 08 Octubre 2024 Arequipa, Perú</p>
+              <p className="text-primary-light text-balance max-w-[250px]">07 - 08 Octubre 2024 Arequipa, Perú</p>
               <a href="#" className="p-4 bg-[#D90B4f] sm:mt-0  mt-4 inline-block">Registrate</a>
             </div>
           </div>
         </div>
       </section>
       {/* Fin Hero */}
-      <main>
+      <main className='font-lato text-base'>
         {/* Inicio presentacion */}
-        <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
-          <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-[#5E151E] before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
-            Presentación</h3>
+        <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px] ">
+          <TitleSection title="Presentación" className='text-[#5E151E]' />
           <p className="md:text-lg mb-4">
             En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
             culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial.</p>
@@ -105,17 +109,11 @@ const App = () => {
 
         {/* Inicio Objetivos */}
         <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
-          <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat] text-white before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
-            Objetivos</h3>
+          <TitleSection title="Objetivos" className='text-white' />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-            <div className="flex md:flex-col md:items-center gap-4 md:gap-4">
-              <Brain size={70} />
-              <p className="md:text-lg mb-4">
-                aaaaIncentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para
+            <Iconos icono={<Diameter color="#fff" size={70} />} texto="Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para <br>
                 que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
-                procesos de desarrollo territorial.</p>
-            </div>
-
+                procesos de desarrollo territorial." />
             <div className="flex md:flex-col md:items-center gap-4 md:gap-4">
               <Brain size={70} />
               <p className="md:text-lg mb-4">
@@ -140,125 +138,195 @@ const App = () => {
         {/* Fin Objetivos */}
 
         {/* Inicio Sede */}
-    <div className="lg:max-w-[1200px] m-auto bg-[#990537] text-white grid grid-flow-row sm:grid-flow-col sm:grid-cols-2">
-      <div className="h-80 sm:h-auto"><img src="administracion-unsa.webp" alt="" /></div>
-      <div className="p-8 sm:p-[54px] md:p-[74px]">
-        <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-white before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
-          Sede</h3>
-        <p className="md:text-lg mb-4">
-          Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para
-          que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
-          procesos de desarrollo territorial.</p>
-      </div>
-    </div>
-    {/* Fin Sede */}
+        <div className="lg:max-w-[1200px] m-auto bg-[#990537] text-white grid grid-flow-row sm:grid-flow-col sm:grid-cols-2">
+          <div className="h-80 sm:h-auto"><img src="administracion-unsa.webp" alt="" /></div>
+          <div className="p-8 sm:p-[54px] md:p-[74px]">
+            <TitleSection title="Sede" className='text-white' />
+            <p className="md:text-lg mb-4">
+              Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para
+              que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
+              procesos de desarrollo territorial.</p>
+          </div>
+        </div>
+        {/* Fin Sede */}
 
-    {/* Incio Inversion*/}
-    <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
-      <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-[#5E151E] before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
-        Inversión</h3>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <div className="bg-[#051F4380] rounded-lg text-white">
-          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
+        {/* Incio Inversion*/}
+        <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
+          <TitleSection title="Inversión" className='text-[#5E151E]' />
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="bg-[#051F4380] rounded-lg text-white">
+              <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+                <p className="font-extrabold text-5xl line-through">80.00</p>
+              </div>
+              <p className="px-7">*Inscripciones
+                del 20 mayo al 30 julio</p>
+              <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+            </div>
+            <div className="bg-[#051F4380] rounded-lg text-white">
+              <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <p className="px-7">*Inscripciones
+                del 20 mayo al 30 julio</p>
+              <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+            </div>
+            <div className="bg-[#051F4380] rounded-lg text-white">
+              <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <p className="px-7">*Inscripciones
+                del 20 mayo al 30 julio</p>
+              <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+            </div>
+            <div className="bg-[#051F4380] rounded-lg text-white">
+              <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
+                <p className="font-extrabold text-5xl">80.00</p>
+              </div>
+              <p className="px-7">*Inscripciones
+                del 20 mayo al 30 julio</p>
+              <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
+            </div>
           </div>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
-            <p className="font-extrabold text-5xl line-through">80.00</p>
-          </div>
-          <p className="px-7">*Inscripciones
-            del 20 mayo al 30 julio</p>
-          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
         </div>
-        <div className="bg-[#051F4380] rounded-lg text-white">
-          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
-          </div>
-          <p className="px-7">*Inscripciones
-            del 20 mayo al 30 julio</p>
-          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
-        </div>
-        <div className="bg-[#051F4380] rounded-lg text-white">
-          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
-          </div>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
-          </div>
-          <p className="px-7">*Inscripciones
-            del 20 mayo al 30 julio</p>
-          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
-        </div>
-        <div className="bg-[#051F4380] rounded-lg text-white">
-          <h4 className="bg-[#051F4380] rounded-tl-lg rounded-tr-lg p-7 mb-7 font-extrabold font-montserrat text-balance">Docentes de Universidades</h4>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">S/ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
-          </div>
-          <div className="flex mx-7 mb-2"><span className="font-bold text-xl w-14">US $ </span>
-            <p className="font-extrabold text-5xl">80.00</p>
-          </div>
-          <p className="px-7">*Inscripciones
-            del 20 mayo al 30 julio</p>
-          <a href="#" className="bg-[#990537] block mx-7 mb-7 mt-4 p-x-3 uppercase text-center tracking-tighter rounded-lg py-3">Inscribete aqui</a>
-        </div>
-      </div>
-    </div>
-{/* Fin Inversion*/}
+        {/* Fin Inversion*/}
 
-{/* Inicio ejes tematicos */}
-    <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
-      <h3 className="text-[20px] md:text-[26px] font-extrabold font-montserrat text-white before:content-[' '] before:w-[54px] before:h-[4px] before:block before:bg-[#D90B4F] before:mb-4 mb-5">
-        Ejes Temáticos</h3>
-        
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 w-full absolute bottom-0">
-          <div><CircleArrowRight size={30} /></div>
-            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores</h5>
+        {/* Inicio ejes tematicos */}
+        <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
+          <TitleSection title="Ejes Temáticos" className="text-white" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores'} imagen={'001.jpg'} />
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación'} imagen={'002.jpg'} />
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores'} imagen={'003.jpg'} />
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores'} imagen={'004.jpg'} />
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores'} imagen={'005.jpg'} />
+            <EjesTematicos ejeTematico={'Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores'} imagen={'006.jpg'} />
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="001.jpg" alt="" /></div>
         </div>
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 w-full absolute bottom-0">
-          <CircleArrowRight />
-            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación</h5>
+        {/* fin ejes tematicos */}
+
+        {/* Inicio Comisiones Organizadoras */}
+        <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
+          <TitleSection title="Comisiones Organizadoras" className="text-[#5E151E]" />
+          <div className="grid gap-y-10 gap-x-4 md:grid-cols-2 mt-8 md:text-lg divide-y divide-gray-500 [&>*]:pt-7">
+            <div className="flex flex-col gap-3 md:first:col-span-2">
+              <h5 className="font-extrabold font-montserrat text-lg">Comisión Central</h5>
+              <p>
+                En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial.</p>
+              <ul>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-3 ">
+              <h5 className="font-extrabold font-montserrat text-lg">Comisión Central</h5>
+              <p>
+                En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial.</p>
+              <ul>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h5 className="font-extrabold font-montserrat text-lg">Comisión Central</h5>
+              <p>
+                En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial.</p>
+              <ul>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h5 className="font-extrabold font-montserrat text-lg">Comisión Central</h5>
+              <p>
+                En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial.</p>
+              <ul>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+                <li>Texto Prueva</li>
+              </ul>
+            </div>
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="002.jpg" alt="" /></div>
         </div>
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
-          <CircleArrowRight />
-            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+        {/* Fin Comisiones Organizadors */}
+
+        {/* Inicio Ponentes */}
+        <div className="lg:max-w-[1200px] m-auto bg-[#051F43] p-8 sm:p-[54px] md:p-[74px] text-white">
+          <TitleSection title="Ponentes" className="text-white" />
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-3 lg:gap-16 lg:px-12 pt-7 ">
+            <PonentesBloque imagen="ponente-enfermeria001.jpg" nombres="Dra. Silvia Erendira Muñoz Ortiz" origen="Universidad Iberoaméricana - Mexico" resumen="En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial." />
+            <PonentesBloque imagen="ponente-enfermeria001.jpg" nombres="Dra. Silvia Erendira Muñoz Ortiz" origen="Universidad Iberoaméricana - Mexico" resumen="En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial." />
+            <PonentesBloque imagen="ponente-enfermeria001.jpg" nombres="Dra. Silvia Erendira Muñoz Ortiz" origen="Universidad Iberoaméricana - Mexico" resumen="En estos tiempos el mundo sufre una profunda transformación de sus paradigmas económicos, políticos, sociales,
+                culturales y tecnológicos, que afectan el comportamiento de organizaciones y empresas, a nivel mundial." />
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="003.jpg" alt="" /></div>
         </div>
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
-          <CircleArrowRight />
-            <h5 className="font-montserrat font-semibold shadow-md">Enfoque comparativo en la didáctica de la educación</h5>
+        {/* Fin Ponentes */}
+
+        {/* inicio contacto */}
+        <div className="lg:max-w-[1200px] m-auto bg-[#F3F4F5] p-8 sm:p-[54px] md:p-[74px]">
+          <TitleSection title="Contacto / Consultas" className='text-[#5E151E]' />
+          <div className="grid md:grid-cols-2 md:pt-7 ">
+            <div className="mx-14 mb-7">
+              <ul className="md:text-lg [&>*]:flex [&>*]:items-center [&>*]:text-balance">
+                <li><span className='mr-4 py-4'><Mail size={36} color="#990537" strokeWidth={1.5} /></span> fad_upg@unsa.edu.pe</li>
+                <li><span className='mr-4 py-4'><PhoneCall size={36} color="#990537" strokeWidth={1.5} /></span>+01 959644577</li>
+                <li><span className='mr-4 py-4'><MapPin size={36} color="#990537" strokeWidth={1.5} /></span>Campus Ingenierias Av. Venezuela s/n - Arequipa</li>
+                <li><span className='mr-4 py-4'><Clock4 size={36} color="#990537" strokeWidth={1.5} /></span> Lunes a viernes 08:00 a 16:00 hrs</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-md">
+              <div className="p-4 md:p-7 rounded-md">
+                <input type="text" placeholder="Nombres y apellidos" className="w-full  outline-none border
+             border-[#ADADAD] p-3 rounded-md focus:border-[#1a1a1a] focus:text-[#1a1a1a] mb-6 "/>
+                <input type="mail" placeholder="Correo" className="w-full outline-none border
+                         border-[#ADADAD] p-3 rounded-md focus:border-[#1a1a1a] focus:text-[#1a1a1a] mb-3 "/>
+                <label className="text-[#8a8a8a]">Consulta:
+                  <textarea className="resize-none w-full h-40 outline-none border
+                         border-[#ADADAD] p-3 rounded-md focus:border-[#1a1a1a] focus:text-[#1a1a1a] mb-3" name="consulta" id="" placeholder="Escribenos tu consulta o comentario"></textarea>
+                </label>
+                <input type="submit" placeholder="Correo" className="w-full outline-none p-3 rounded-md bg-[#990537] text-white uppercase" />
+              </div>
+            </div>
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="004.jpg" alt="" /></div>
         </div>
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
-          <CircleArrowRight />
-            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+        {/* fin contacto */}
+      </main >
+      <footer className='bg-[#990537] [&>*]:p-6'>
+        <div className='text-white text-sm tracking-tight flex place-content-between items-center sm:max-w-[1200px] sm:m-auto'>
+          <div>
+            <img src="logounsafndgran.svg" alt="" className='h-11' />
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="005.jpg" alt="" /></div>
-        </div>
-        <div className="relative">
-          <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 absolute bottom-0">
-          <CircleArrowRight />
-            <h5 className="font-montserrat font-semibold">Enfoque comparativo en la didáctica de la educación</h5>
+          <div className='flex gap-2 opacity-70 [&>*]:h-7'>
+            <img src="icon-facebook.svg" alt="" />
+            <img src="icon-instagram.svg" alt="" />
+            <img src="icon-linkedin.svg" alt="" />
+            <img src="icon-youtube.svg" alt="" />
+            <img src="icon-tiktok.svg" alt="" />
           </div>
-          <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full [&>*]:grayscale"><img src="006.jpg" alt="" /></div>
         </div>
-      </div>
-    </div>
-{/* fin ejes tematicos */}
-      </main>
+      </footer>
+
     </>
   )
 }
