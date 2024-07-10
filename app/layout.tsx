@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: "Next Eventos UNSA",
+  title: "Eventos UNSA Next",
   description: "WebSite de eventos de la UNSA",
 };
 
