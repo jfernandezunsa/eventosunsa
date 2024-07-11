@@ -14,9 +14,10 @@ import {
   PhoneCall,
 } from "lucide-react";
 import React from "react";
-import CarouselItem from "@/components/custom/carouselItem";
+import CarouselItem from "@/components/custom/carouselApi";
 import { Button } from "@/components/ui/button";
 import { CarouselDemo } from "@/components/custom/carouselBlock";
+
 
 
 const App = () => {
@@ -69,9 +70,9 @@ const App = () => {
       {/* fin header  */}
       {/* Inicio Hero */}
       <section className="bg-[#051F43] h-[70vh] mt-[106px] sm:mt-[148px] relative">
-      <div className="ml-80"> 
-      <CarouselDemo />
-    </div>
+        <div>
+          <CarouselDemo />
+        </div>
       </section>
       {/* Fin Hero */}
       <main className="font-lato text-base">

@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonHero from "./buttomHero";
+import { cn } from "@/lib/utils";
 interface Props {
   imageItem: string;
   textSub?: string;
@@ -7,8 +8,12 @@ interface Props {
   textDate?: string;
   buttonHero?: React.JSX.Element;
 }
+/* className = { cn(titleStyle, className) } */
+const Active = "h-[70vh] sm:h-[70vh] bg-cover w-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#051f4380] from-0% to-[#051F43] to-70% flex items-center place-content-center z-20 relative top-[-70vh]"
+const Disable = "h-[70vh] sm:h-[70vh] bg-cover w-full flex items-center place-content-center z-20 relative top-[-70vh]"
 
-const CarouselItem = ({
+
+const CarouselApi = ({
   imageItem,
   textSub,
   textMain,
@@ -17,10 +22,10 @@ const CarouselItem = ({
 }: Props) => {
   return (
     <>
-      <div className="w-full h-[70vh] [&>*]:object-cover [&>*]:w-full [&>*]:h-full absolute">
+      <div className="w-full h-[70vh] [&>*]:object-cover [&>*]:w-full [&>*]:h-full z-10">
         <img src={imageItem} alt="" className="h-14" />
       </div>
-      <div className="h-[70vh] sm:h-[70vh] bg-cover w-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#051f4380] from-0% to-[#051F43] to-70% flex items-center place-content-center absolute z-20">
+      <div className={Active}>
         <div className="text-white font-montserrat mx-10 sm:mx-14 sm:max-w-[500px] md:max-w-[500px] lg:max-w-[900px] flex flex-col gap-4 sm:gap-6 md:gap-10">
           <h6 className="font-light lg:font-bold text-2xl leading-7 md:text-3xl lg:text-4xl sm:text-center">
             {textSub}
@@ -40,4 +45,4 @@ const CarouselItem = ({
   );
 };
 
-export default CarouselItem;
+export default CarouselApi;
