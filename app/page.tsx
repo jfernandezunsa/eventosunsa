@@ -12,11 +12,13 @@ import {
   MapPin,
   Phone,
   PhoneCall,
+  SquareMenu,
 } from "lucide-react";
 import React from "react";
 import CarouselItem from "@/components/custom/carouselApi";
 import { Button } from "@/components/ui/button";
 import { CarouselDemo } from "@/components/custom/carouselBlock";
+import MenuMain from "@/components/custom/menuMain";
 
 
 
@@ -33,12 +35,12 @@ const App = () => {
             <p className="flex gap-1">
               <Phone size={20} /> +01 959644577
               <MapPin size={20} />
-              Campus Ingenierias Av. Venezuela s/n - Arequipa
+              Campus Ingenierias Av. Venezuela s/n - Arequipa 
             </p>
           </div>
         </header>
-
-        <nav className="flex place-content-between items-center lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg">
+        <MenuMain />
+        {/* <nav className="flex place-content-between items-center lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg">
           <div className="flex items-center gap-3">
             <img src="logo-unsa.svg" alt="" className="h-14" />
             <div className="font-montserrat font-extrabold text-[19px] leading-5 tracking-tight text-balance max-w-[450px] hidden sm:block">
@@ -65,7 +67,7 @@ const App = () => {
             </ul>
             <span className="material-symbols-outlined lg:hidden">menu</span>
           </div>
-        </nav>
+        </nav> */}
       </div>
       {/* fin header  */}
       {/* Inicio Hero */}
