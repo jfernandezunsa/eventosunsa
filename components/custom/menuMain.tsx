@@ -11,13 +11,17 @@ const MenuMain = () => {
   const [open, setOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
 
   const Links = [
-    { name: "Presentación", link: "/" },
-    { name: "Organización", link: "/" },
-    { name: "Ejes Temáticos", link: "/ponentes" },
-    { name: "Ponentes", link: "/" },
-    { name: "Inversión", link: "/" },
-    { name: "Contacto", link: "/" },
+    { name: "Inicio", link: "/" },
+    { name: "Presentación", link: "/presentacion" },
+    { name: "Organización", link: "/organizacion" },
+    { name: "Ejes Temáticos", link: "/ejestematicos" },
+    { name: "Ponentes", link: "/ponentes" },
+    { name: "Contacto", link: "/contacto" },
   ];
+
+  const handleLinkClick = () => {
+    setOpen(false); // Cerrar el menú al hacer clic en un enlace
+  };
 
   return (
     <div className="sm:flex place-content-between items-center w-full lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg">
@@ -41,8 +45,8 @@ const MenuMain = () => {
       >
         {Links.map((link, index) => (
           <li key={index} className="font-lato font-normal tracking-tight my-4">
-            <Link href={link.link}>
-              <a className="hover:text-[#5E151E] duration-500">{link.name}</a>
+            <Link href={link.link} className="hover:text-[#5E151E] duration-500" onClick={handleLinkClick}>
+              {link.name}
             </Link>
           </li>
         ))}
