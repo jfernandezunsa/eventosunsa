@@ -43,35 +43,6 @@ const App = () => {
           </div>
         </header>
         <MenuMain />
-
-        {/* <nav className="flex place-content-between items-center lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg">
-          <div className="flex items-center gap-3">
-            <img src="logo-unsa.svg" alt="" className="h-14" />
-            <div className="font-montserrat font-extrabold text-[19px] leading-5 tracking-tight text-balance max-w-[450px] hidden sm:block">
-              <h2 className="text-sm text-gray-600">
-                Facultad de Administración
-              </h2>
-              <h6>Unidad de Posgrado</h6>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <ul className="hidden lg:flex gap-5">
-              <li>
-                <a href="#">Text 1</a>
-              </li>
-              <li>
-                <a href="#">Text 2</a>
-              </li>
-              <li>
-                <a href="#">Text 3</a>
-              </li>
-              <li>
-                <a href="#">Text 4</a>
-              </li>
-            </ul>
-            <span className="material-symbols-outlined lg:hidden">menu</span>
-          </div>
-        </nav> */}
       </div>
       {/* fin header  */}
       {/* Inicio Hero */}
@@ -134,12 +105,12 @@ const App = () => {
 
         {/* Inicio Objetivos */}
         <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
-          <TitleSection title="Objetivos" className="text-white" />
+          <TitleSection title="Objetivos" className="text-white pb-4" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
             <ObjetivoCard
-              icono={<Diameter color="#fff" size={70} />}
-              texto="Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para <br>
-                que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
+              icono="Diameter"
+              size={70}
+              texto="Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los
                 procesos de desarrollo territorial."
             />
             <div className="flex md:flex-col md:items-center gap-4 md:gap-4">
@@ -280,7 +251,7 @@ const App = () => {
               ejeTematico={
                 "Enfoque comparativo en la didáctica de la educación física cooperativa y la educación en valores"
               }
-              imagen={"001.jpg"}
+              imagen={"unsaslider001.webp"}
             />
             <EjesTematicos
               ejeTematico={
