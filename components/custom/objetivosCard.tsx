@@ -3,7 +3,7 @@ interface Props {
   icono: React.JSX.Element
   texto: string
 }
-const Iconos = ({ icono, texto }: Props) => {
+const ObjetivoCard = ({ icono, texto }: Props) => {
   return (
     <div className="flex md:flex-col md:items-center gap-4 md:gap-4">
       {icono}
@@ -13,4 +13,4 @@ const Iconos = ({ icono, texto }: Props) => {
   )
 }
 
-export default Iconos
+export default ObjetivoCard

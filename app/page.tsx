@@ -1,6 +1,6 @@
 
 import EjesTematicos from "@/components/custom/ejesTematicos";
-import Iconos from "@/components/custom/iconos";
+import ObjetivoCard from "@/components/custom/objetivosCard";
 import PonentesBloque from "@/components/custom/ponentesBloque";
 import TitleSection from "@/components/custom/titleSection";
 import {
@@ -18,6 +18,9 @@ import React from "react";
 import CarouselItem from "@/components/custom/carouselApi";
 import { Button } from "@/components/ui/button";
 import { CarouselDemo } from "@/components/custom/carouselBlock";
+
+
+import Icon from "@/components/custom/iconName";
 import MenuMain from "@/components/custom/menuMain";
 
 
@@ -35,11 +38,12 @@ const App = () => {
             <p className="flex gap-1">
               <Phone size={20} /> +01 959644577
               <MapPin size={20} />
-              Campus Ingenierias Av. Venezuela s/n - Arequipa 
+              Campus Ingenierias Av. Venezuela s/n - Arequipa
             </p>
           </div>
         </header>
         <MenuMain />
+
         {/* <nav className="flex place-content-between items-center lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg">
           <div className="flex items-center gap-3">
             <img src="logo-unsa.svg" alt="" className="h-14" />
@@ -132,7 +136,7 @@ const App = () => {
         <div className="lg:max-w-[1200px] m-auto bg-gradient-to-r from-[#5E151E] to-[#051F43] text-white p-8 sm:p-[54px] md:p-[74px]">
           <TitleSection title="Objetivos" className="text-white" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-            <Iconos
+            <ObjetivoCard
               icono={<Diameter color="#fff" size={70} />}
               texto="Incentivar la investigación y valorizar la incidencia de innovaciones de los participantes al congreso para <br>
                 que generen vínculos entre los movimientos sociales, sus organizaciones y la institucionalización de los

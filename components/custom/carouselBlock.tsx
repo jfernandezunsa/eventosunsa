@@ -30,7 +30,7 @@ export function CarouselDemo() {
           <CarouselApi imageItem={"unsaslider002.webp"} textSub="Expositores Internacionales" textMain="Colombia, Perú, Mexico" textDate="Talleres y exposiciones gratuitas" buttonHero={<ButtonHero buttonText={"Participa"} buttonLink={"#"} />} />
         </CarouselItem>
         <CarouselItem>
-          <CarouselApi imageItem={"city-tour-arequipa.webp"} textSub="Cultura, Gastromia, Aventura y diversión" textMain="Disfruta de Arequipa" textDate="Paseo Turisticos, degustaciones, Fin de fiesta" buttonHero={<ButtonHero buttonText="Tours y Hospedaje" buttonLink="#" />} />
+          <CarouselApi imageItem={"city-tour-arequipa.webp"} textSub="Cultura, Gastronomía, aventura y diversión" textMain="Disfruta de Arequipa" textDate="Paseo Turisticos, degustaciones, Fin de fiesta" buttonHero={<ButtonHero buttonText="Tours y Hospedaje" buttonLink="#" />} />
         </CarouselItem>
       </CarouselContent>
     </Carousel>
