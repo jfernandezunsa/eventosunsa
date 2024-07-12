@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import EjesTematicos from "@/components/custom/ejesTematicos";
 import ObjetivoCard from "@/components/custom/objetivosCard";
 import PonentesBloque from "@/components/custom/ponentesBloque";
@@ -28,23 +28,6 @@ import MenuMain from "@/components/custom/menuMain";
 const App = () => {
   return (
     <>
-      {/* incio header  */}
-      <div className="fixed w-full top-0 left-0 z-40">
-        <header className="bg-[#051F43] hidden sm:block p-3">
-          <div className="text-white text-sm tracking-tight flex place-content-between items-center sm:max-w-[1200px] sm:m-auto">
-            <p className="flex gap-1">
-              <Mail size={20} /> fad_upg@unsa.edu.pe
-            </p>
-            <p className="flex gap-1">
-              <Phone size={20} /> +01 959644577
-              <MapPin size={20} />
-              Campus Ingenierias Av. Venezuela s/n - Arequipa
-            </p>
-          </div>
-        </header>
-        <MenuMain />
-      </div>
-      {/* fin header  */}
       {/* Inicio Hero */}
       <section className="bg-[#051F43] h-[70vh] mt-[106px] sm:mt-[148px] relative">
         <div>
@@ -145,7 +128,7 @@ const App = () => {
         {/* Inicio Sede */}
         <div className="lg:max-w-[1200px] m-auto bg-[#990537] text-white grid grid-flow-row sm:grid-flow-col sm:grid-cols-2">
           <div className="h-80 sm:h-auto">
-            <img src="administracion-unsa.webp" alt="" />
+            <Image src="/administracion-unsa.webp" alt="" width={600} height={600} />
           </div>
           <div className="p-8 sm:p-[54px] md:p-[74px]">
             <TitleSection title="Sede" className="text-white" />
@@ -461,20 +444,6 @@ const App = () => {
         </div>
         {/* fin contacto */}
       </main>
-      <footer className="bg-[#990537] [&>*]:p-6">
-        <div className="text-white text-sm tracking-tight flex place-content-between items-center sm:max-w-[1200px] sm:m-auto">
-          <div>
-            <img src="logounsafndgran.svg" alt="" className="h-11" />
-          </div>
-          <div className="flex gap-2 opacity-70 [&>*]:h-7">
-            <img src="icon-facebook.svg" alt="" />
-            <img src="icon-instagram.svg" alt="" />
-            <img src="icon-linkedin.svg" alt="" />
-            <img src="icon-youtube.svg" alt="" />
-            <img src="icon-tiktok.svg" alt="" />
-          </div>
-        </div>
-      </footer>
     </>
   );
 };
