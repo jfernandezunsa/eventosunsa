@@ -1,0 +1,69 @@
+
+'use client'
+
+import React, { useEffect, useState } from 'react';
+import { fetchObjetivos } from '../../lib/api';
+import Icon from '@/components/custom/iconName';
+import { icons } from 'lucide-react';
+
+
+interface Objetivo {
+  id: number;
+  attributes: {
+    iconObjetivo: string;
+    iconNameObjetivo: React.JSX.Element;
+    descriptionObjetivo: {
+      type: string;
+      children: {
+        type: string;
+        text: string;
+      }[];
+    }[];
+  };
+}
+
+const ObjetivosContent: React.FC = () => {
+  const [objetivos, setObjetivos] = useState<Objetivo[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const getObjetivos = async () => {
+      try {
+        const data = await fetchObjetivos();
+        setObjetivos(data);
+      } catch (error) {
+        setError('Error al obtener los datos de los objetivos');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getObjetivos();
+  }, []);
+
+  if (loading) return <div>Cargando...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  function cn(arg0: string, arg1: { objetivo: Objetivo; "": any; }, arg2: string): React.ReactNode {
+    throw new Error('Function not implemented.');
+  }
+
+  return (
+    <>
+      {objetivos.map((objetivo) => (
+
+        < div key={objetivo.id} className="flex md:flex-col md:items-center gap-4 md:gap-4" >
+          {objetivo.attributes.iconNameObjetivo}
+          {cn("<", { objetivo.attributes.iconObjetivo }, " />")}
+          <Icon name="CircleArrowRight" color="blue" size={250} />
+          <p className="md:text-lg mb-4">{objetivo.attributes.iconObjetivo}</p>
+          <p className="md:text-lg mb-4">{objetivo.attributes.descriptionObjetivo[0].children[0].text}</p>
+
+        </div>
+      ))}
+    </>
+  );
+};
+
+export default ObjetivosContent;

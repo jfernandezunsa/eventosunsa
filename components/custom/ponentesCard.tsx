@@ -5,7 +5,7 @@ interface Props {
   origen: string
   resumen: string
 }
-const PonentesBloque = ({ imagen, nombres, origen, resumen }: Props) => {
+const PonentesCard = ({ imagen, nombres, origen, resumen }: Props) => {
   return (
     <div className="flex flex-col gap-4">
       <div className="w-full h-[350px] [&>*]:object-cover [&>*]:w-full [&>*]:h-full ">
@@ -18,4 +18,4 @@ const PonentesBloque = ({ imagen, nombres, origen, resumen }: Props) => {
   )
 }
 
-export default PonentesBloque
+export default PonentesCard

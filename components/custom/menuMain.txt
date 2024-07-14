@@ -1,4 +1,3 @@
-
 'use client'
 import Image from "next/image";
 import { IonIcon } from "@ionic/react";
@@ -6,9 +5,11 @@ import { closeOutline, menuOutline } from "ionicons/icons";
 import Link from "next/link";
 import React, { useState } from "react";
 import ButtonHero from "./buttomHero";
+import { useRouter } from "next/router";
 
 const MenuMain = () => {
   const [open, setOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
+  const router = useRouter(); // Hook useRouter de Next.js para obtener la ruta actual
 
   const Links = [
     { name: "Inicio", link: "/" },
@@ -16,7 +17,7 @@ const MenuMain = () => {
     { name: "Organización", link: "/organizacion" },
     { name: "Ejes Temáticos", link: "/ejestematicos" },
     { name: "Ponentes", link: "/ponentes" },
-    { name: "Contacto", link: "/contacto" },
+    { name: "Contacto", link: "/objetivos" },
   ];
 
   const handleLinkClick = () => {
@@ -44,11 +45,15 @@ const MenuMain = () => {
       >
         {Links.map((link, index) => (
           <li key={index} className="font-lato font-normal tracking-tight my-4">
-            <Link href={link.link} className="hover:text-[#5E151E] duration-500" onClick={handleLinkClick}>
-              {link.name}
+            <Link href={link.link}>
+              {/* Usamos anchor tag dentro de Link para manejar el click */}
+              <a className={router.pathname === link.link ? 'hover:text-[#5E151E] duration-500 text-[#5E151E]' : 'hover:text-[#5E151E] duration-500'} onClick={handleLinkClick}>
+                {link.name}
+              </a>
             </Link>
           </li>
         ))}
+        {/* No olvides ajustar los props de ButtonHero según tus necesidades */}
         <ButtonHero buttonText={"Regístrate"} buttonLink={"#"} />
       </ul>
     </div>

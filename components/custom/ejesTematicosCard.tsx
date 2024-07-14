@@ -5,7 +5,7 @@ interface Props {
   imagen: string
 
 }
-const EjesTematicos = ({ ejeTematico, imagen }: Props) => {
+const EjesTematicosCard = ({ ejeTematico, imagen }: Props) => {
   return (
     <div className="relative">
       <div className="flex gap-3 bg-gradient-to-b from-transparent to-black p-4 z-10 w-full absolute bottom-0">
@@ -17,4 +17,4 @@ const EjesTematicos = ({ ejeTematico, imagen }: Props) => {
   )
 }
 
-export default EjesTematicos
+export default EjesTematicosCard

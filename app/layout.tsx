@@ -35,9 +35,9 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${lato.variable} ${montserrat.variable}`}>
       <body className="bg-gray-200 font-light text-base">
-      <LayoutHeader />
+        <LayoutHeader />
         {children}
-      <LayoutFooter />
+        <LayoutFooter />
       </body>
     </html>
   );
