@@ -11,7 +11,6 @@ const MenuMain = () => {
   const [open, setOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
 
   const Links = [
-    { name: "Inicio", link: "/" },
     { name: "Presentación", link: "/presentacion" },
     { name: "Organización", link: "/organizacion" },
     { name: "Ejes Temáticos", link: "/ejestematicos" },
@@ -26,11 +25,14 @@ const MenuMain = () => {
   return (
     <div className={"sm:flex place-content-between items-center w-full lg:max-w-[1200px] m-auto bg-white p-6 border-b-2 border-[#051F43] shadow-lg"}>
       <div className="flex items-center gap-3">
-        <Image src="/logo-unsa.svg" alt="Logo UNSA" width={168} height={50} />
-        <div className="font-montserrat font-extrabold text-[19px] leading-5 tracking-tight text-balance max-w-[450px] hidden sm:block">
+        <Link href="/">
+          <Image src="/logo-unsa.svg" alt="Logo UNSA" width={168} height={50} />
+        </Link>
+        <Link href="/" className="font-montserrat font-extrabold text-[19px] leading-5 tracking-tight text-balance max-w-[450px] hidden sm:block">
           <h2 className="text-sm text-gray-600">Facultad de Administración</h2>
           <h6>Unidad de Posgrado</h6>
-        </div>
+        </Link>
+
       </div>
       <div
         onClick={() => setOpen(!open)}

@@ -16,9 +16,7 @@ const App = () => {
         <CarouselDemo />
       </section>
       <main className="font-lato text-base">
-        <BienvenidosBlock />
         <ObjetivosBlock />
-        <SedeBlock />
         <InversionBlock />
         <EjesTematicos />
         <PonentesBlock />

@@ -6,7 +6,7 @@ import PonentesBlock from '@/components/custom/ponentesBlock';
 
 function page() {
   return (
-    <div className='mt-[150px]'>
+    <div className='mt-[105px] md:mt-[150px]'>
       <PonentesBlock />
     </div>
   )

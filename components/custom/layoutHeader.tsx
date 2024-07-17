@@ -8,12 +8,12 @@ const LayoutHeader = () => {
       <header className="bg-[#051F43] hidden sm:block p-3">
         <div className="text-white text-sm tracking-tight flex place-content-between items-center sm:max-w-[1200px] sm:m-auto">
           <p className="flex gap-1">
-            <Mail size={20} /> fad_upg@unsa.edu.pe
+            <Mail size={20} /><a href="mailto:fad_upg@unsa.edu.pe">fad_upg@unsa.edu.pe</a>
           </p>
           <p className="flex gap-1">
-            <Phone size={20} /> +01 959644577
+            <Phone size={20} /> +01 54 212473
             <MapPin size={20} />
-            Campus Ingenierias Av. Venezuela s/n - Arequipa
+            Campus Ingenierias Av. Venezuela Nº 400 - Arequipa
           </p>
         </div>
       </header>

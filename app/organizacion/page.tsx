@@ -7,11 +7,10 @@ import SedeBlock from "@/components/custom/sedeBlock";
 function page() {
   return (
     <>
-      <div className="mt-[150px]">
+      <div className="mt-[105px] md:mt-[150px]">
         <SedeBlock />
       </div>
 
-      {/* Inicio Comisiones Organizadoras */}
       <div className="lg:max-w-[1200px] m-auto bg-white p-8 sm:p-[54px] md:p-[74px]">
         <TitleSection
           title="Comisiones Organizadoras"
@@ -84,7 +83,6 @@ function page() {
           </div>
         </div>
       </div>
-      {/* Fin Comisiones Organizadors */}
     </>
   )
 }
