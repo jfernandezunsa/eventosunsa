@@ -11,6 +11,7 @@ const MenuMain = () => {
   const [open, setOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
 
   const Links = [
+    { name: "Inicio", link: "/" },
     { name: "Presentación", link: "/presentacion" },
     { name: "Organización", link: "/organizacion" },
     { name: "Ejes Temáticos", link: "/ejestematicos" },

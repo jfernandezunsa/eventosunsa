@@ -1,5 +1,4 @@
-import BienvenidosBlock from "@/components/custom/bienvenidosBlock";
-import TitleSection from "@/components/custom/titleSection";
+import BienvenidosBlock from "../../components/custom/bienvenidosBlock";
 import React from "react";
 
 function page() {

@@ -2,7 +2,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import PonentesBlock from '@/components/custom/ponentesBlock';
+import PonentesBlock from '../../components/custom/ponentesBlock';
 
 function page() {
   return (

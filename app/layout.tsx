@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Lato } from "next/font/google";
 import "./globals.css";
-import MenuMain from "@/components/custom/menuMain";
+import MenuMain from "../components/custom/menuMain";
 import { Mail, Phone, MapPin } from "lucide-react";
-import LayoutFooter from "@/components/custom/layoutFooter";
-import LayoutHeader from "@/components/custom/layoutHeader";
+import LayoutFooter from "../components/custom/layoutFooter";
+import LayoutHeader from "../components/custom/layoutHeader";
 
 const inter = Inter({
   subsets: ["latin"],

@@ -1,13 +1,9 @@
 // pages/App.tsx
 'use client'
 
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import TitleSection from '@/components/custom/titleSection';
-import { fetchEjeTematico } from '../../lib/api';
-import { CircleArrowRight } from 'lucide-react';
-import EjesTematicos from '@/components/custom/ejesTematicosBlock';
-import EjesContent from '@/components/custom/ejesContent';
+import React, {  } from 'react';
+/* import { fetchEjeTematico } from '../../lib/api'; */
+import EjesContent from '../../components/custom/ejesContent';
 
 function page() {
   return (
