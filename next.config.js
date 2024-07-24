@@ -1,6 +1,8 @@
 // next.config.js
 module.exports = {
-  images: {
+  basePath: '/evento', // Set basePath to '.' for relative paths
+  output: 'export',
+  images: {   
     domains: ["localhost"],
   },
 };

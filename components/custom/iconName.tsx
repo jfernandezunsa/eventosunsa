@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Icon = ({ name, color, size }: Props) => {
-  const LucideIcon = icons[name];
+  const LucideIcon = (icons as Record<string, any>)[name];
 
   if (!LucideIcon) {
     console.warn(`Icon "${name}" not found in lucide-react.`);
