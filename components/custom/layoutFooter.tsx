@@ -1,18 +1,20 @@
 import React from "react";
+import Image from "next/image";
+
 
 function LayoutFooter() {
   return (
     <footer className="bg-[#990537] [&>*]:p-6">
       <div className="text-white text-sm tracking-tight flex place-content-between items-center sm:max-w-[1200px] sm:m-auto">
         <div>
-          <img src="logounsafndgran.svg" alt="" className="h-11" />
+          <Image src="/logounsafndgran.svg" alt="" width={130} height={80} />
         </div>
         <div className="flex gap-2 opacity-70 [&>*]:h-7">
-          <img src="icon-facebook.svg" alt="" />
-          <img src="icon-instagram.svg" alt="" />
-          <img src="icon-linkedin.svg" alt="" />
-          <img src="icon-youtube.svg" alt="" />
-          <img src="icon-tiktok.svg" alt="" />
+          <Image src="/icon-facebook.svg" alt="" width={28} height={28} />
+          <Image src="/icon-instagram.svg" alt="" width={28} height={28} />
+          <Image src="/icon-linkedin.svg" alt="" width={28} height={28} />
+          <Image src="/icon-youtube.svg" alt="" width={28} height={28} />
+          <Image src="/icon-tiktok.svg" alt="" width={28} height={28} />
         </div>
       </div>
     </footer>

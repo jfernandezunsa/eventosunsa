@@ -32,7 +32,7 @@ const ContactoBlock = () => {
                 <span className="mr-4 py-4">
                   <PhoneCall size={36} color="#990537" strokeWidth={1.5} />
                 </span>
-                +01 959644577
+                +01 54 212473
               </li>
               <li data-aos='fade-right' data-aos-delay='400'>
                 <span className="mr-4 py-4">
