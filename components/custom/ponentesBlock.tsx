@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+//import Image from "next/image";
 import TitleSection from "../../components/custom/titleSection";
 //import { fetchPonents } from "../../lib/api";
 import Aos from "aos";

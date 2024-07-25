@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+//import Image from "next/image";
 interface Props {
   imageItem: string;
   textSub?: string;
@@ -22,7 +22,7 @@ const CarouselApi = ({
   return (
     <>
       <div className="w-full h-[70vh] [&>*]:object-cover [&>*]:w-full [&>*]:h-full z-10">
-        <Image src={`/${imageItem}`} alt="" width={1980} height={800} />
+        <img src={imageItem} alt="" width={1980} height={800} />
       </div>
       <div className={Active}>
         <div className="text-white font-montserrat mx-10 sm:mx-14 sm:max-w-[500px] md:max-w-[500px] lg:max-w-[900px] flex flex-col gap-4 sm:gap-6 md:gap-10">
