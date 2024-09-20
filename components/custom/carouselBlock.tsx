@@ -10,6 +10,7 @@ import CarouselApi from "./carouselApi"
 import ButtonHero from "./buttomHero"
 
 export function CarouselDemo() {
+
   return (
     <Carousel
       className="w-full"
